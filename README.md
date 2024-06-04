@@ -13,15 +13,24 @@ mxh@mxh:~/Desktop$ which java
 mxh@mxh:~/Desktop$ 
 ```
 
-1.cd /home/mxh/NetBeansProjects/swingapp4/dist  
-
-2.java -agentlib:native-image-agent=config-output-dir=config -jar swingapp4.jar
-
-3.native-image --no-fallback -march=native -H:+AddAllCharsets -H:ConfigurationFileDirectories=config --enable-url-protocols=https,http -Djava.awt.headless=false -Djdk.gtk.version=2 -Dsun.java2d.debugfonts=true --allow-incomplete-classpath --add-exports java.desktop/sun.font=ALL-UNNAMED -J-Xmx16G -jar swingapp4.jar
-
+1.
+`
+cd /home/mxh/NetBeansProjects/swingapp4/dist  
+`
+2.
+`
+java -agentlib:native-image-agent=config-output-dir=config -jar swingapp4.jar
+`
+3.
+`
+native-image --no-fallback -march=native -H:+AddAllCharsets -H:ConfigurationFileDirectories=config --enable-url-protocols=https,http -Djava.awt.headless=false -Djdk.gtk.version=2 -Dsun.java2d.debugfonts=true --allow-incomplete-classpath --add-exports java.desktop/sun.font=ALL-UNNAMED -J-Xmx16G -jar swingapp4.jar
+`
 
 
 Then ./swingapp4 execut program, using fcitx sunpin to input Chinese, found unable to input Chinese.
 
 
 The dependent software is as follows:
+```
+fcitx-sunpinyin:amd64                         0.4.2-4 
+```
