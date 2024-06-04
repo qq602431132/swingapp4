@@ -29,8 +29,10 @@ native-image --no-fallback -march=native -H:+AddAllCharsets -H:ConfigurationFile
 `
 
 
+
 Then ./swingapp4 execut program, using fcitx sunpin to input Chinese, found unable to input Chinese.
 
+![截图_deepin-terminal_20240604182045](https://github.com/qq602431132/swingapp4/assets/138293218/9df1e59b-5940-4e0f-8b3d-d5fe5f647043)
 
 The dependent software is as follows:
 ```
